@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>registration form</title>
+  <meta name="viewport" content="width=device-width,intial-scale=1.0">
+
+</head>
+<body>
+
+<div class="registration-form">
+    <div class="title">Registration</div>
+    <form action="#">
+        <div class="user-details">
+            <div class="input-box">
+                <span class="details">Full Name</span>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Username</span>
+                <input type="text" placeholder="Enter your username" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Enter your email" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" placeholder="Enter your number" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Password</span>
+                <input type="text" placeholder="Enter your password" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input type="text" placeholder="confirm your password" required>
+            </div>
+        </div>
+        <div class="gender-details">
+            <span class="gender-title">Gender</span>
+            <div class="category">
+                <label for="">
+                    <span class="dot one"></span>
+                    <span class="gender">Male</span>
+                </label>
+                <label for="">
+                    <span class="dot one"></span>
+                    <span class="gender">Female</span>
+                </label>
+                <label for="">
+                    <span class="dot one"></span>
+                    <span class="gender">Prefer not to say</span>
+                </label>
+            </div>
+        </div>
+        <div class="button">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</div>
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'popins',sans-serif;
+        
+    }
+    body{
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background: radial-gradient(#fff,#ffd6d6);
+        
+    }
+    .registration-form{
+        max-width: 700px;
+        width: 100%;
+        background: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+    }
+    .registration-form .title{
+        font-size: 30px;
+        font-weight: 500;
+        position: relative;
+    }
+    .registration-form .title::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 30px;
+        background: linear-gradient(135deg,#71b7e6);
+}
+    .registration-form form .user-details{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    form .user-details .input-box{
+        margin: 20px 0 12px 0;
+        width: calc(100% / 2-20px);
+        }
+    .user-details .input-box .details{
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .user-details .input-box input{
+        height: 45px;
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding-left: 15px;
+        font-size: 16px;
+        
+    }
+    .user-details .input-box input:focus,
+    .user-details .input-box input:vaild{
+        border-color:#9b59b6
+    }
+    form .gender-details .gender-title{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    form .gender-details .category{
+        display: flex;
+        width: 80%;
+        margin: 14px 0;
+        justify-content: space-around;
+     }
+    .gender-details .category label{
+        
+    }
+
+    
+</style>
+
+
+
+
+
